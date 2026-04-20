@@ -595,8 +595,7 @@ export default function LaFoaPlongeeSite() {
                 )}
 
                 <p className="mt-4 text-sm text-slate-400">
-                  Formulaire de contact actif. Vous recevrez des demandes plus précises avec la date souhaitée,
-                  le nombre de participants, le type de sortie et le niveau de plongée.
+                  Formulaire de contact actif. À bientôt.
                 </p>
               </div>
             </form>
