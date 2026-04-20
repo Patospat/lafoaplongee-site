@@ -253,9 +253,9 @@ const seoPages = [
         <img
   src="/logo.png"
   alt="Logo La Foa Plongée"
-  className="absolute right-10 top-10 h-32 w-32 opacity-80"
+  className="absolute right-10 top-10 h-32 w-32 opacity-80 z-10"
 />
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(34,211,238,0.24),transparent_35%),linear-gradient(to_bottom,rgba(2,6,23,0.25),rgba(2,6,23,0.96))]" />
+        <div className="absolute inset-0 z-0 bg-[radial-gradient(circle_at_top,rgba(34,211,238,0.24),transparent_35%),linear-gradient(to_bottom,rgba(2,6,23,0.25),rgba(2,6,23,0.96))]" />
 
         <div className="mx-auto grid max-w-7xl items-center gap-10 px-6 py-20 md:grid-cols-2 md:py-28">
           <div className="relative z-10">
