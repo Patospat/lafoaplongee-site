@@ -625,7 +625,7 @@ export default function LaFoaPlongeeSite() {
         
         <div className="mx-auto flex max-w-7xl flex-col gap-3 text-sm text-slate-400 md:flex-row md:items-center md:justify-between">
           <p>© La Foa Plongée — Site officiel</p>
-          <p>Design responsive prêt à être enrichi avec vos photos, tarifs et contenus finaux</p>
+          <p>Design responsive </p>
         </div>
       </footer>
     </div>
