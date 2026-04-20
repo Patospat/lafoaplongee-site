@@ -175,17 +175,13 @@ export default function LaFoaPlongeeSite() {
       </header>
 
       <section className="relative overflow-hidden">
-        <div className="absolute inset-0 z-0 bg-[radial-gradient(circle_at_top,rgba(34,211,238,0.24),transparent_35%),linear-gradient(to_bottom,rgba(2,6,23,0.35),rgba(2,6,23,0.96))]" />
+  <div className="absolute inset-0 z-0 bg-[radial-gradient(circle_at_top,rgba(34,211,238,0.24),transparent_35%),linear-gradient(to_bottom,rgba(2,6,23,0.35),rgba(2,6,23,0.96))]" />
 
-        <div className="absolute inset-0 z-0">
-          <Image
-            src={barriereCorail}
-            alt="Barrière de corail et lagon de Ouano en Nouvelle-Calédonie"
-            fill
-            className="object-cover opacity-30"
-            priority
-          />
-        </div>
+  <img
+    src="/plongee-barriere-corail-isie-nouvelle-caledonie.jpg"
+    alt="Barrière de corail et lagon de Ouano en Nouvelle-Calédonie"
+    className="absolute inset-0 h-full w-full object-cover opacity-30"
+  />
 
         <div className="relative z-10 mx-auto grid max-w-7xl items-center gap-10 px-6 py-20 md:grid-cols-2 md:py-28">
           <div>
@@ -234,19 +230,15 @@ export default function LaFoaPlongeeSite() {
           </div>
 
           <div className="rounded-[2rem] border border-white/10 bg-white/5 p-4 shadow-2xl backdrop-blur">
-            <div className="overflow-hidden rounded-[1.5rem]">
-              <Image
-                src={bateauOuano}
-                alt="Bateau de plongée à Ouano en Nouvelle-Calédonie"
-                width={1600}
-                height={900}
-                className="h-full w-full object-cover"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
-
+  <div className="overflow-hidden rounded-[1.5rem]">
+    <img
+      src="/mouillage-bateau-plongee-isie-ouano-nouvelle-caledonie.jpg"
+      alt="Bateau de plongée à Ouano en Nouvelle-Calédonie"
+      className="h-full w-full object-cover"
+    />
+  </div>
+</div>
+          
       <section id="experience" className="mx-auto max-w-7xl px-6 py-20">
         <div className="grid gap-12 lg:grid-cols-[1.05fr_0.95fr]">
           <div>
@@ -624,17 +616,15 @@ export default function LaFoaPlongeeSite() {
       </a>
 
       <footer className="border-t border-white/10 px-6 py-8">
-        <div className="mx-auto mb-6 flex max-w-7xl items-center gap-4">
-          <Image
-            src={logo}
-            alt="Logo La Foa Plongée"
-            width={48}
-            height={48}
-            className="h-12 w-12 rounded-lg object-contain opacity-90"
-          />
-          <span className="text-sm uppercase tracking-[0.3em] text-cyan-300">La Foa Plongée</span>
-        </div>
-
+  <div className="mx-auto mb-6 flex max-w-7xl items-center gap-4">
+    <img
+      src="/logo.jpg"
+      alt="Logo La Foa Plongée"
+      className="h-12 w-12 rounded-lg object-contain opacity-90"
+    />
+    <span className="text-sm uppercase tracking-[0.3em] text-cyan-300">La Foa Plongée</span>
+  </div>
+        
         <div className="mx-auto flex max-w-7xl flex-col gap-3 text-sm text-slate-400 md:flex-row md:items-center md:justify-between">
           <p>© La Foa Plongée — Site officiel</p>
           <p>Design responsive prêt à être enrichi avec vos photos, tarifs et contenus finaux</p>
