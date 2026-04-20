@@ -32,6 +32,20 @@ export default function FormationPlongeeNiveau1Page() {
             Elle s’adresse aux personnes souhaitant évoluer au-delà du baptême et acquérir de solides bases pour plonger en sécurité.
           </p>
         </div>
+        <div className="mt-10 border-t border-white/10 pt-8">
+  <p className="text-sm uppercase tracking-[0.3em] text-cyan-300">Aller plus loin</p>
+  <div className="mt-4 flex flex-wrap gap-4">
+    <a href="/bapteme-plongee-la-foa" className="text-cyan-300 hover:text-cyan-200">
+      Commencer par un baptême
+    </a>
+    <a href="/plongee-exploration-ouano" className="text-cyan-300 hover:text-cyan-200">
+      Voir les explorations
+    </a>
+    <a href="/centre-de-plongee-la-foa" className="text-cyan-300 hover:text-cyan-200">
+      Découvrir le centre
+    </a>
+  </div>
+</div>
       </div>
     </main>
   );
