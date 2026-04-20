@@ -522,7 +522,7 @@ export default function LaFoaPlongeeSite() {
               Envoyer la demande
             </button>
             <p className="mt-4 text-sm text-slate-400">
-              Maquette prête à être reliée à un envoi email, WhatsApp ou formulaire de réservation.
+           À BIENTÔT .
             </p>
           </div>
         </div>
