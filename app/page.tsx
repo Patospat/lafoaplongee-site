@@ -224,7 +224,7 @@ const seoPages = [
             <img
               src="/logo.png"
               alt="Logo La Foa Plongée"
-              className="h-14 w-14 rounded-xl object-cover shadow-lg"
+              className="h-14 w-14 rounded-xl object-contain shadow-lg"
             />
             <div>
               <p className="text-xs uppercase tracking-[0.35em] text-cyan-300">Nouvelle-Calédonie</p>
@@ -640,10 +640,14 @@ const seoPages = [
       </a>
 
       <footer className="border-t border-white/10 px-6 py-8">
-        <div className="mx-auto mb-6 flex max-w-7xl items-center gap-4">
-          <img src="/logo.png" alt="Logo footer" className="h-12 w-12 rounded-lg object-cover opacity-90" />
-          <span className="text-sm uppercase tracking-[0.3em] text-cyan-300">La Foa Plongée</span>
-        </div>
+  <div className="mx-auto mb-6 flex max-w-7xl items-center gap-4">
+    <img
+      src="/logo.png"
+      alt="Logo La Foa Plongée"
+      className="h-12 w-12 rounded-lg object-contain opacity-90"
+    />
+    <span className="text-sm uppercase tracking-[0.3em] text-cyan-300">La Foa Plongée</span>
+  </div>
         <div className="mx-auto flex max-w-7xl flex-col gap-3 text-sm text-slate-400 md:flex-row md:items-center md:justify-between">
           <p>© La Foa Plongée — Maquette de site vitrine</p>
           <p>Design responsive prêt à être enrichi avec vos photos, tarifs et contenus finaux</p>
