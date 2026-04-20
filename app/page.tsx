@@ -222,7 +222,7 @@ const seoPages = [
         <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
           <div className="flex items-center gap-4">
             <img
-              src="/logo.jpeg"
+              src="/logo.jpg"
               alt="Logo La Foa Plongée"
               className="h-14 w-14 rounded-xl object-contain shadow-lg"
             />
@@ -251,7 +251,7 @@ const seoPages = [
 
       <section className="relative overflow-hidden">
         <img
-          src="/logo.jpeg"
+          src="/logo.jpg"
           alt="Logo La Foa Plongée"
           className="absolute right-10 top-10 h-32 w-32 object-contain z-10"
         />
@@ -642,7 +642,7 @@ const seoPages = [
       <footer className="border-t border-white/10 px-6 py-8">
   <div className="mx-auto mb-6 flex max-w-7xl items-center gap-4">
     <img
-      src="/logo.jpeg"
+      src="/logo.jpg"
       alt="Logo La Foa Plongée"
       className="h-12 w-12 rounded-lg object-contain opacity-90"
     />
