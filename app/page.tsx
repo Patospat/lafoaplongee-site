@@ -519,6 +519,44 @@ export default function LaFoaPlongeeSite() {
                 <span className="mb-2 block text-sm text-slate-300">Email</span>
                 <input name="email" type="email" required className="w-full rounded-2xl border border-white/10 bg-slate-950 px-4 py-3 outline-none transition focus:border-cyan-300" placeholder="Votre email" />
               </label>
+              <label className="block">
+                <span className="mb-2 block text-sm text-slate-300">Date souhaitée</span>
+                <input name="date" type="date" className="w-full rounded-2xl border border-white/10 bg-slate-950 px-4 py-3 outline-none transition focus:border-cyan-300" />
+              </label>
+              <label className="block">
+                <span className="mb-2 block text-sm text-slate-300">Nombre de personnes</span>
+                <input name="participants" type="number" min="1" className="w-full rounded-2xl border border-white/10 bg-slate-950 px-4 py-3 outline-none transition focus:border-cyan-300" placeholder="Ex : 2" />
+              </label>
+              <label className="block">
+                <span className="mb-2 block text-sm text-slate-300">Type de sortie</span>
+                <select name="trip_type" className="w-full rounded-2xl border border-white/10 bg-slate-950 px-4 py-3 outline-none transition focus:border-cyan-300">
+                  <option value="">Sélectionnez</option>
+                  <option value="Baptême">Baptême</option>
+                  <option value="Exploration">Exploration</option>
+                  <option value="Formation">Formation</option>
+                </select>
+              </label>
+              <label className="block">
+                <span className="mb-2 block text-sm text-slate-300">Niveau de plongée</span>
+                <select name="level" className="w-full rounded-2xl border border-white/10 bg-slate-950 px-4 py-3 outline-none transition focus:border-cyan-300">
+                  <option value="">Sélectionnez</option>
+                  <option value="Débutant">Débutant</option>
+                  <option value="Niveau 1">Niveau 1</option>
+                  <option value="Niveau 2">Niveau 2</option>
+                  <option value="Niveau 3">Niveau 3</option>
+                  <option value="Autre certification">Autre certification</option>
+                </select>
+              </label>
+
+              <label className="block">
+                <span className="mb-2 block text-sm text-slate-300">Hébergement souhaité</span>
+                <select name="accommodation" className="w-full rounded-2xl border border-white/10 bg-slate-950 px-4 py-3 outline-none transition focus:border-cyan-300">
+                  <option value="">Sélectionnez</option>
+                  <option value="Bungalow">Bungalow</option>
+                  <option value="Camping">Camping (faré)</option>
+                  <option value="Aucun">Aucun</option>
+                </select>
+              </label>
               <label className="block md:col-span-2">
                 <span className="mb-2 block text-sm text-slate-300">Votre demande</span>
                 <textarea name="message" required rows={6} className="w-full rounded-2xl border border-white/10 bg-slate-950 px-4 py-3 outline-none transition focus:border-cyan-300" placeholder="Bonjour, je souhaite réserver une sortie…" />
@@ -533,7 +571,7 @@ export default function LaFoaPlongeeSite() {
               )}
 
               <p className="mt-4 text-sm text-slate-400 md:col-span-2">
-                Formulaire de contact actif. Vous recevrez les demandes sur votre adresse email configurée dans Formspree.
+                Formulaire de contact actif. Vous recevrez des demandes plus précises avec la date souhaitée, le nombre de participants, le type de sortie et le niveau de plongée.
               </p>
             </form>
           </div>
@@ -563,4 +601,3 @@ export default function LaFoaPlongeeSite() {
     </div>
   );
 }
-
