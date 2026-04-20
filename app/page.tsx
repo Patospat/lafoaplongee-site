@@ -143,14 +143,11 @@ export default function LaFoaPlongeeSite() {
 
         <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
           <div className="flex items-center gap-4">
-            <Image
-              src={logo}
-              alt="Logo La Foa Plongée"
-              width={56}
-              height={56}
-              className="h-14 w-14 rounded-xl object-contain shadow-lg"
-              priority
-            />
+            <<img
+  src="/logo.jpg"
+  alt="Logo La Foa Plongée"
+  className="h-14 w-14 rounded-xl object-contain shadow-lg"
+/>
             <div>
               <p className="text-xs uppercase tracking-[0.35em] text-cyan-300">Nouvelle-Calédonie</p>
               <h1 className="text-xl font-semibold">La Foa Plongée</h1>
