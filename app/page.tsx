@@ -182,63 +182,64 @@ export default function LaFoaPlongeeSite() {
     alt="Barrière de corail et lagon de Ouano en Nouvelle-Calédonie"
     className="absolute inset-0 h-full w-full object-cover opacity-30"
   />
-</section>
 
-        <div className="relative z-10 mx-auto grid max-w-7xl items-center gap-10 px-6 py-20 md:grid-cols-2 md:py-28">
-          <div>
-            <p className="inline-flex rounded-full border border-cyan-300/25 bg-cyan-300/10 px-4 py-1 text-sm text-cyan-200">
-              Club de plongée à La Foa · Départs vers Ouano
-            </p>
+  <div className="relative z-10 mx-auto grid max-w-7xl items-center gap-10 px-6 py-20 md:grid-cols-2 md:py-28">
+    <div>
+      <p className="inline-flex rounded-full border border-cyan-300/25 bg-cyan-300/10 px-4 py-1 text-sm text-cyan-200">
+        Club de plongée à La Foa · Départs vers Ouano
+      </p>
 
-            <h2 className="mt-6 max-w-3xl text-4xl font-semibold leading-tight md:text-6xl">
-              Vivez la plongée en Nouvelle-Calédonie dans un décor marin d’exception.
-            </h2>
+      <h2 className="mt-6 max-w-3xl text-4xl font-semibold leading-tight md:text-6xl">
+        Vivez la plongée en Nouvelle-Calédonie dans un décor marin d’exception.
+      </h2>
 
-            <p className="mt-6 max-w-xl text-lg leading-8 text-slate-300">
-              La Foa Plongée propose des baptêmes, des explorations et des formations dans un esprit local,
-              rassurant et professionnel, au cœur du lagon calédonien.
-            </p>
+      <p className="mt-6 max-w-xl text-lg leading-8 text-slate-300">
+        La Foa Plongée propose des baptêmes, des explorations et des formations dans un esprit local,
+        rassurant et professionnel, au cœur du lagon calédonien.
+      </p>
 
-            <div className="mt-8 flex flex-wrap gap-4">
-              <a
-                href="#contact"
-                className="rounded-full bg-cyan-400 px-6 py-3 font-medium text-slate-950 transition hover:scale-[1.03]"
-              >
-                Réserver une sortie
-              </a>
-              <a
-                href="#prestations"
-                className="rounded-full border border-white/15 px-6 py-3 font-medium text-white transition hover:bg-white/5"
-              >
-                Découvrir les prestations
-              </a>
-            </div>
+      <div className="mt-8 flex flex-wrap gap-4">
+        <a
+          href="#contact"
+          className="rounded-full bg-cyan-400 px-6 py-3 font-medium text-slate-950 transition hover:scale-[1.03]"
+        >
+          Réserver une sortie
+        </a>
+        <a
+          href="#prestations"
+          className="rounded-full border border-white/15 px-6 py-3 font-medium text-white transition hover:bg-white/5"
+        >
+          Découvrir les prestations
+        </a>
+      </div>
 
-            <div className="mt-10 grid gap-4 sm:grid-cols-3">
-              <div className="rounded-2xl border border-white/10 bg-white/5 p-4 backdrop-blur">
-                <p className="text-2xl font-semibold">Ouano</p>
-                <p className="text-sm text-slate-300">zone privilégiée</p>
-              </div>
-              <div className="rounded-2xl border border-white/10 bg-white/5 p-4 backdrop-blur">
-                <p className="text-2xl font-semibold">UNESCO</p>
-                <p className="text-sm text-slate-300">lagon classé</p>
-              </div>
-              <div className="rounded-2xl border border-white/10 bg-white/5 p-4 backdrop-blur">
-                <p className="text-2xl font-semibold">Local</p>
-                <p className="text-sm text-slate-300">club à taille humaine</p>
-              </div>
-            </div>
-          </div>
+      <div className="mt-10 grid gap-4 sm:grid-cols-3">
+        <div className="rounded-2xl border border-white/10 bg-white/5 p-4 backdrop-blur">
+          <p className="text-2xl font-semibold">Ouano</p>
+          <p className="text-sm text-slate-300">zone privilégiée</p>
+        </div>
+        <div className="rounded-2xl border border-white/10 bg-white/5 p-4 backdrop-blur">
+          <p className="text-2xl font-semibold">UNESCO</p>
+          <p className="text-sm text-slate-300">lagon classé</p>
+        </div>
+        <div className="rounded-2xl border border-white/10 bg-white/5 p-4 backdrop-blur">
+          <p className="text-2xl font-semibold">Local</p>
+          <p className="text-sm text-slate-300">club à taille humaine</p>
+        </div>
+      </div>
+    </div>
 
-          <div className="rounded-[2rem] border border-white/10 bg-white/5 p-4 shadow-2xl backdrop-blur">
-  <div className="overflow-hidden rounded-[1.5rem]">
-    <img
-      src="/mouillage-bateau-plongee-isie-ouano-nouvelle-caledonie.jpg"
-      alt="Bateau de plongée à Ouano en Nouvelle-Calédonie"
-      className="h-full w-full object-cover"
-    />
+    <div className="rounded-[2rem] border border-white/10 bg-white/5 p-4 shadow-2xl backdrop-blur">
+      <div className="overflow-hidden rounded-[1.5rem]">
+        <img
+          src="/mouillage-bateau-plongee-isie-ouano-nouvelle-caledonie.jpg"
+          alt="Bateau de plongée à Ouano en Nouvelle-Calédonie"
+          className="h-full w-full object-cover"
+        />
+      </div>
+    </div>
   </div>
-</div>
+</section>
           
       <section id="experience" className="mx-auto max-w-7xl px-6 py-20">
         <div className="grid gap-12 lg:grid-cols-[1.05fr_0.95fr]">
