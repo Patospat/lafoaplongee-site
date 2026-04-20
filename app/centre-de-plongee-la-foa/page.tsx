@@ -31,6 +31,20 @@ export default function CentreDePlongeeLaFoaPage() {
             Choisir La Foa Plongée, c’est vivre une expérience locale, authentique et professionnelle, avec la possibilité de combiner plongée et hébergement pour profiter pleinement de votre séjour.
           </p>
         </div>
+        <div className="mt-10 border-t border-white/10 pt-8">
+  <p className="text-sm uppercase tracking-[0.3em] text-cyan-300">Nos activités</p>
+  <div className="mt-4 flex flex-wrap gap-4">
+    <a href="/bapteme-plongee-la-foa" className="text-cyan-300 hover:text-cyan-200">
+      Baptême de plongée
+    </a>
+    <a href="/plongee-exploration-ouano" className="text-cyan-300 hover:text-cyan-200">
+      Exploration
+    </a>
+    <a href="/formation-plongee-niveau-1-nouvelle-caledonie" className="text-cyan-300 hover:text-cyan-200">
+      Formation niveau 1
+    </a>
+  </div>
+</div>
       </div>
     </main>
   );
