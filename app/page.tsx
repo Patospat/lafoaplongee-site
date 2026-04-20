@@ -1,11 +1,6 @@
 'use client';
 
 import React, { useState } from 'react';
-import Image from 'next/image';
-
-import logo from '../public/logo.jpg';
-import barriereCorail from '../public/plongee-barriere-corail-isie-nouvelle-caledonie.jpg';
-import bateauOuano from '../public/mouillage-bateau-plongee-isie-ouano-nouvelle-caledonie.jpg';
 
 export default function LaFoaPlongeeSite() {
   const [sent, setSent] = useState(false);
@@ -53,14 +48,14 @@ export default function LaFoaPlongeeSite() {
       dives: '6 plongées',
       price: '50 000 F',
       details:
-        'Accès à 20 m accompagné d’un moniteur, avec apprentissage des bases, théorie, aisance sous l’eau et premières plongées encadrées.',
+        'Accès à 20 m accompagné d’un moniteur, avec apprentissage progressif des bases, de la théorie et de l’aisance sous l’eau.',
     },
     {
       level: 'Niveau 2',
       dives: '10 plongées',
       price: '70 000 F',
       details:
-        'Perfectionnement vers l’autonomie, assistance, adaptation à la profondeur et gestion de plongées plus engagées.',
+        'Perfectionnement vers l’autonomie, assistance, gestion de la profondeur et progression technique.',
     },
     {
       level: 'Niveau 3',
@@ -78,7 +73,7 @@ export default function LaFoaPlongeeSite() {
     },
     {
       title: 'Niveau 2 — Vers l’autonomie',
-      text: 'Gestion de plongée, assistance, orientation, remontée et évolution progressive vers davantage d’autonomie.',
+      text: 'Gestion de plongée, assistance, orientation, remontée et progression vers davantage d’autonomie.',
     },
     {
       title: 'Niveau 3 — Expertise et sécurité',
@@ -125,7 +120,7 @@ export default function LaFoaPlongeeSite() {
   ];
 
   return (
-    <div className="relative min-h-screen overflow-hidden bg-slate-950 text-white">
+    <div className="min-h-screen bg-slate-950 text-white">
       <style>{`
         @keyframes waveGlow {
           0% { transform: translateX(-18%) translateY(0) scaleX(1); opacity: 0.18; }
@@ -148,13 +143,10 @@ export default function LaFoaPlongeeSite() {
 
         <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
           <div className="flex items-center gap-4">
-            <Image
-              src={logo}
+            <img
+              src="/logo.jpg"
               alt="Logo La Foa Plongée"
-              width={56}
-              height={56}
               className="h-14 w-14 rounded-xl object-contain shadow-lg"
-              priority
             />
             <div>
               <p className="text-xs uppercase tracking-[0.35em] text-cyan-300">Nouvelle-Calédonie</p>
@@ -182,15 +174,11 @@ export default function LaFoaPlongeeSite() {
       <section className="relative overflow-hidden">
         <div className="absolute inset-0 z-0 bg-[radial-gradient(circle_at_top,rgba(34,211,238,0.24),transparent_35%),linear-gradient(to_bottom,rgba(2,6,23,0.35),rgba(2,6,23,0.96))]" />
 
-        <div className="absolute inset-0 z-0">
-          <Image
-            src={barriereCorail}
-            alt="Barrière de corail et lagon de Ouano en Nouvelle-Calédonie"
-            fill
-            className="object-cover opacity-30"
-            priority
-          />
-        </div>
+        <img
+          src="/plongee-barriere-corail-isie-nouvelle-caledonie.jpg"
+          alt="Barrière de corail et lagon de Ouano en Nouvelle-Calédonie"
+          className="absolute inset-0 h-full w-full object-cover opacity-30"
+        />
 
         <div className="relative z-10 mx-auto grid max-w-7xl items-center gap-10 px-6 py-20 md:grid-cols-2 md:py-28">
           <div>
@@ -240,11 +228,9 @@ export default function LaFoaPlongeeSite() {
 
           <div className="rounded-[2rem] border border-white/10 bg-white/5 p-4 shadow-2xl backdrop-blur">
             <div className="overflow-hidden rounded-[1.5rem]">
-              <Image
-                src={bateauOuano}
+              <img
+                src="/mouillage-bateau-plongee-isie-ouano-nouvelle-caledonie.jpg"
                 alt="Bateau de plongée à Ouano en Nouvelle-Calédonie"
-                width={1600}
-                height={900}
                 className="h-full w-full object-cover"
               />
             </div>
