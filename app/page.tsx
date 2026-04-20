@@ -251,7 +251,7 @@ const seoPages = [
 
       <section className="relative overflow-hidden">
         <img
-          src="/logo.png"
+          src="/lfp.png"
           alt="Watermark La Foa Plongée"
           className="pointer-events-none absolute right-10 top-10 z-0 h-56 w-56 opacity-10 blur-[1px] hidden md:block"
         />
