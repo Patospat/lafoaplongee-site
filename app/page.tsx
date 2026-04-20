@@ -182,6 +182,7 @@ export default function LaFoaPlongeeSite() {
     alt="Barrière de corail et lagon de Ouano en Nouvelle-Calédonie"
     className="absolute inset-0 h-full w-full object-cover opacity-30"
   />
+      </section>
 
         <div className="relative z-10 mx-auto grid max-w-7xl items-center gap-10 px-6 py-20 md:grid-cols-2 md:py-28">
           <div>
