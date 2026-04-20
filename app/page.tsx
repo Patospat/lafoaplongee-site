@@ -113,7 +113,28 @@ export default function LaFoaPlongeeSite() {
       image: "https://images.unsplash.com/photo-1560275619-4662e36fa65c?auto=format&fit=crop&w=1200&q=80",
     },
   ];
-
+const seoPages = [
+  {
+    title: "Baptême de plongée à La Foa",
+    href: "/bapteme-plongee-la-foa",
+    text: "Première plongée encadrée dans le lagon de Ouano.",
+  },
+  {
+    title: "Plongée d’exploration à Ouano",
+    href: "/plongee-exploration-ouano",
+    text: "Sorties pour plongeurs certifiés dans des sites exceptionnels.",
+  },
+  {
+    title: "Formation niveau 1",
+    href: "/formation-plongee-niveau-1-nouvelle-caledonie",
+    text: "Apprenez à plonger en Nouvelle-Calédonie.",
+  },
+  {
+    title: "Centre de plongée à La Foa",
+    href: "/centre-de-plongee-la-foa",
+    text: "Découvrez notre club et nos prestations.",
+  },
+];
   const faqs = [
     {
       q: "Faut-il déjà avoir plongé ?",
@@ -459,7 +480,37 @@ export default function LaFoaPlongeeSite() {
           </div>
         </div>
       </section>
+<section className="mx-auto max-w-7xl px-6 py-20">
+  <p className="text-sm uppercase tracking-[0.35em] text-cyan-300">
+    Guides & informations
+  </p>
 
+  <h3 className="mt-4 text-3xl font-semibold md:text-4xl">
+    Préparez votre plongée à La Foa et Ouano
+  </h3>
+
+  <div className="mt-10 grid gap-6 md:grid-cols-2 xl:grid-cols-4">
+    {seoPages.map((page) => (
+      <a
+        key={page.href}
+        href={page.href}
+        className="rounded-[1.5rem] border border-white/10 bg-white/5 p-6 transition hover:-translate-y-1 hover:border-cyan-300/40"
+      >
+        <h4 className="text-xl font-semibold text-white">
+          {page.title}
+        </h4>
+
+        <p className="mt-3 text-slate-300">
+          {page.text}
+        </p>
+
+        <span className="mt-4 inline-block text-cyan-300">
+          Lire →
+        </span>
+      </a>
+    ))}
+  </div>
+</section>
       <section id="contact" className="py-20">
         <div className="mx-auto grid max-w-7xl gap-8 px-6 lg:grid-cols-[0.9fr_1.1fr]">
           <div className="rounded-[2rem] border border-white/10 bg-slate-900 p-8">
