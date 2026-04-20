@@ -1,11 +1,6 @@
 'use client';
 
 import React, { useState } from 'react';
-import Image from 'next/image';
-
-import logo from '../public/logo.jpg';
-import barriereCorail from '../public/plongee-barriere-corail-isie-nouvelle-caledonie.jpg';
-import bateauOuano from '../public/mouillage-bateau-plongee-isie-ouano-nouvelle-caledonie.jpg';
 
 export default function LaFoaPlongeeSite() {
   const [sent, setSent] = useState(false);
