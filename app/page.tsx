@@ -1,4 +1,9 @@
+'use client';
+import React, { useState } from 'react';
+
 export default function LaFoaPlongeeSite() {
+  const [sent, setSent] = useState(false);
+  const [loading, setLoading] = useState(false);
   const whatsappLink = "https://wa.me/687948083?text=Bonjour%20La%20Foa%20Plong%C3%A9e%2C%20je%20souhaite%20avoir%20des%20informations%20sur%20vos%20sorties%20et%20formations.";
   const bubbles = [
     { size: "h-16 w-16", left: "left-[6%]", delay: "[animation-delay:-2s]", duration: "[animation-duration:18s]" },
@@ -480,11 +485,11 @@ export default function LaFoaPlongeeSite() {
             </div>
           </div>
 
-              <div className="rounded-[2rem] border border-white/10 bg-white/5 p-8 backdrop-blur">
+          <div className="rounded-[2rem] border border-white/10 bg-white/5 p-8 backdrop-blur">
             <form
               action="https://formspree.io/f/meevzzod"
               method="POST"
-              onSubmit={async (e) => {
+              onSubmit={async (e: any) => {
                 e.preventDefault();
                 setLoading(true);
                 const form = e.currentTarget;
@@ -500,30 +505,37 @@ export default function LaFoaPlongeeSite() {
                   form.reset();
                 }
               }}
-            <div className="grid gap-5 md:grid-cols-2">
+              className="grid gap-5 md:grid-cols-2"
+            >
               <label className="block">
                 <span className="mb-2 block text-sm text-slate-300">Nom</span>
-                <input className="w-full rounded-2xl border border-white/10 bg-slate-950 px-4 py-3 outline-none transition focus:border-cyan-300" placeholder="Votre nom" />
+                <input name="name" required className="w-full rounded-2xl border border-white/10 bg-slate-950 px-4 py-3 outline-none transition focus:border-cyan-300" placeholder="Votre nom" />
               </label>
               <label className="block">
                 <span className="mb-2 block text-sm text-slate-300">Téléphone</span>
-                <input className="w-full rounded-2xl border border-white/10 bg-slate-950 px-4 py-3 outline-none transition focus:border-cyan-300" placeholder="Votre numéro" />
+                <input name="phone" className="w-full rounded-2xl border border-white/10 bg-slate-950 px-4 py-3 outline-none transition focus:border-cyan-300" placeholder="Votre numéro" />
               </label>
               <label className="block md:col-span-2">
                 <span className="mb-2 block text-sm text-slate-300">Email</span>
-                <input className="w-full rounded-2xl border border-white/10 bg-slate-950 px-4 py-3 outline-none transition focus:border-cyan-300" placeholder="Votre email" />
+                <input name="email" type="email" required className="w-full rounded-2xl border border-white/10 bg-slate-950 px-4 py-3 outline-none transition focus:border-cyan-300" placeholder="Votre email" />
               </label>
               <label className="block md:col-span-2">
                 <span className="mb-2 block text-sm text-slate-300">Votre demande</span>
-                <textarea rows={6} className="w-full rounded-2xl border border-white/10 bg-slate-950 px-4 py-3 outline-none transition focus:border-cyan-300" placeholder="Bonjour, je souhaite réserver une sortie…" />
+                <textarea name="message" required rows={6} className="w-full rounded-2xl border border-white/10 bg-slate-950 px-4 py-3 outline-none transition focus:border-cyan-300" placeholder="Bonjour, je souhaite réserver une sortie…" />
               </label>
-            </div>
-            <button className="mt-6 rounded-full bg-cyan-400 px-6 py-3 font-medium text-slate-950 transition hover:scale-[1.03]">
-              Envoyer la demande
-            </button>
-            <p className="mt-4 text-sm text-slate-400">
-           À BIENTÔT .
-            </p>
+
+              <button type="submit" className="mt-4 rounded-full bg-cyan-400 px-6 py-3 font-medium text-slate-950 transition hover:scale-[1.03]">
+                {loading ? 'Envoi...' : 'Envoyer la demande'}
+              </button>
+
+              {sent && (
+                <p className="text-green-400 mt-4">Message envoyé ✅ Nous vous répondons rapidement.</p>
+              )}
+
+              <p className="mt-4 text-sm text-slate-400 md:col-span-2">
+                Formulaire de contact actif. Vous recevrez les demandes sur votre adresse email configurée dans Formspree.
+              </p>
+            </form>
           </div>
         </div>
       </section>
@@ -551,3 +563,4 @@ export default function LaFoaPlongeeSite() {
     </div>
   );
 }
+
