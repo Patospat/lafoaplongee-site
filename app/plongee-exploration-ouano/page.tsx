@@ -33,23 +33,9 @@ export default function PlongeeExplorationOuanoPage() {
             <strong className="text-cyan-300">700 F par équipement</strong> ou
             un pack complet à{" "}
             <strong className="text-cyan-300">2 000 F</strong>.
-        <div className="mt-10 border-t border-white/10 pt-8">
-  <p className="text-sm uppercase tracking-[0.3em] text-cyan-300">Aller plus loin</p>
-  <div className="mt-4 flex flex-wrap gap-4">
-    <a href="/bapteme-plongee-la-foa" className="text-cyan-300 hover:text-cyan-200">
-      Découvrir le baptême
-    </a>
-    <a href="/formation-plongee-niveau-1-nouvelle-caledonie" className="text-cyan-300 hover:text-cyan-200">
-      Formation niveau 1
-    </a>
-    <a href="/centre-de-plongee-la-foa" className="text-cyan-300 hover:text-cyan-200">
-      Voir le centre
-    </a>
-  </div>
-</div>
-            
-</div>
-</main>
-);
+          </p>
+        </div>
+      </div>
+    </main>
+  );
 }
-            
