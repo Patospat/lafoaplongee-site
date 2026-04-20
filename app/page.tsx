@@ -480,7 +480,26 @@ export default function LaFoaPlongeeSite() {
             </div>
           </div>
 
-          <div className="rounded-[2rem] border border-white/10 bg-white/5 p-8 backdrop-blur">
+              <div className="rounded-[2rem] border border-white/10 bg-white/5 p-8 backdrop-blur">
+            <form
+              action="https://formspree.io/f/meevzzod"
+              method="POST"
+              onSubmit={async (e) => {
+                e.preventDefault();
+                setLoading(true);
+                const form = e.currentTarget;
+                const data = new FormData(form);
+                const res = await fetch("https://formspree.io/f/meevzzod", {
+                  method: "POST",
+                  body: data,
+                  headers: { Accept: "application/json" },
+                });
+                setLoading(false);
+                if (res.ok) {
+                  setSent(true);
+                  form.reset();
+                }
+              }}
             <div className="grid gap-5 md:grid-cols-2">
               <label className="block">
                 <span className="mb-2 block text-sm text-slate-300">Nom</span>
