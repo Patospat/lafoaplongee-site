@@ -47,3 +47,9 @@ export default function PlongeeExplorationOuanoPage() {
     </a>
   </div>
 </div>
+            
+</div>
+</main>
+);
+}
+            
