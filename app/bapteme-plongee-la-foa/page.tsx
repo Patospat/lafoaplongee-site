@@ -28,7 +28,22 @@ export default function BaptemePlongeeLaFoaPage() {
             Choisir un baptême de plongée à La Foa, c’est découvrir le lagon calédonien autrement, au plus près des récifs et de la biodiversité exceptionnelle de Ouano.
           </p>
         </div>
-      </div>
-    </main>
-  );
+      <div className="mt-10 border-t border-white/10 pt-8">
+  <p className="text-sm uppercase tracking-[0.3em] text-cyan-300">Aller plus loin</p>
+  <div className="mt-4 flex flex-wrap gap-4">
+    <a href="/plongee-exploration-ouano" className="text-cyan-300 hover:text-cyan-200">
+      Voir les plongées d’exploration
+    </a>
+    <a href="/formation-plongee-niveau-1-nouvelle-caledonie" className="text-cyan-300 hover:text-cyan-200">
+      Découvrir la formation niveau 1
+    </a>
+    <a href="/centre-de-plongee-la-foa" className="text-cyan-300 hover:text-cyan-200">
+      En savoir plus sur le centre
+    </a>
+  </div>
+</div>
+
+</div>
+</main>
+);
 }
